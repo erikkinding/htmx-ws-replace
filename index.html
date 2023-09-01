@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>htmx-ws-replace</title>
+   <script src="https://unpkg.com/htmx.org@1.9.5"></script>
+   <script src="https://unpkg.com/htmx.org/dist/ext/ws.js"></script>
+ </head>
+<body>
+    <div id="main">
+        
+        <button hx-get="/init-ws" hx-target="#ws-output" hx-swap="outerHTML" class="logs-menu-content">
+            Connect WS
+        </button>
+    
+        <div id="ws-output">
+            
+        </div>
+    </div>
+</body>
+</html>
